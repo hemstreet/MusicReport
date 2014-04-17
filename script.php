@@ -1,7 +1,7 @@
 <?php
 
 // Include Simple html dom
-include_once('./simple_html_dom.php');
+include_once(dirname(__FILE__) . '/simple_html_dom.php');
 
 $script = array_shift($argv);
 
@@ -16,7 +16,7 @@ forEach($argv as $userName) {
 
     $html = file_get_html('http://www.last.fm/user/' . $userName);
 
-    echo $userName . ' --------------------------------------------------' . PHP_EOL . PHP_EOL;
+    echo $userName . ' -------' . PHP_EOL . PHP_EOL;
 
     $x = false;
 
